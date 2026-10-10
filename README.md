@@ -31,6 +31,10 @@ npm install @openai/agents zod
 npx tsx supervisor.ts
 ```
 
+## Licence
+
+MIT, see [LICENSE](LICENSE). Copy, adapt and use the code freely, including at work.
+
 ## How this repository is made
 
 The examples live in the `examples/` folder of the StackUnseen site, where the site reads them to render each code page, and are published here from that folder. Issues and discussion are welcome on [stackunseen/discussions](https://github.com/stackunseen/discussions).
