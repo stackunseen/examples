@@ -1,0 +1,20 @@
+{"question": "How much can I spend on a hotel in London?", "expected": ["travel-and-expenses#hotels"]}
+{"question": "Can I fly premium economy on a long flight to New York?", "expected": ["travel-and-expenses#booking-travel"]}
+{"question": "What is the daily food allowance on an overnight trip?", "expected": ["travel-and-expenses#meals"]}
+{"question": "How long do I have to submit an expense claim?", "expected": ["travel-and-expenses#claims"]}
+{"question": "How many holiday days do I get each year?", "expected": ["leave#annual-leave"]}
+{"question": "Can unused days roll over into next year?", "expected": ["leave#carrying-leave-over"]}
+{"question": "How much paid leave does the secondary carer get after a birth?", "expected": ["leave#parental-leave"]}
+{"question": "When do I need a doctor's note for being off sick?", "expected": ["leave#sick-leave"]}
+{"question": "What should I do with a suspicious email asking for my password?", "expected": ["security-basics#phishing"]}
+{"question": "I left my work laptop on a train. Who do I tell, and how fast?", "expected": ["security-basics#lost-or-stolen-devices"]}
+{"question": "Can I paste customer personal data into ChatGPT?", "expected": ["data-handling#using-ai-tools", "data-handling#classification-levels"]}
+{"question": "How long are AI assistant conversations kept?", "expected": ["data-handling#retention"]}
+{"question": "Who writes the updates customers see during an outage?", "expected": ["incident-response#communication"]}
+{"question": "How quickly must on-call respond to a Sev1 at night?", "expected": ["incident-response#paging-and-acknowledgement"]}
+{"question": "When is the post-mortem for a Sev2 due?", "expected": ["incident-response#postmortems"]}
+{"question": "Do I need a VPN when working from a hotel?", "expected": ["it-and-access#remote-access"]}
+{"question": "Who approves access to a Restricted system?", "expected": ["it-and-access#requesting-access"]}
+{"question": "How many quotes do I need for a 12,000 pound purchase?", "expected": ["procurement#buying-something"]}
+{"question": "Can I work from Spain for a month?", "expected": ["remote-work#working-from-abroad"]}
+{"question": "Is there money for a desk or a monitor at home?", "expected": ["remote-work#home-office-equipment"]}

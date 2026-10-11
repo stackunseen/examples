@@ -5,9 +5,18 @@ Small, runnable code behind the posts and maps on [stackunseen.com](https://stac
 | Example | What it shows | On the site |
 | --- | --- | --- |
 | [`langgraph-supervisor`](langgraph-supervisor) | A supervisor pattern as an explicit LangGraph state graph, with typed state and a retrieval node | [Supervisor graph with LangGraph](https://stackunseen.com/code/langgraph-supervisor) |
-| [`multi-agent-orchestration-python`](multi-agent-orchestration-python) | A supervisor handing off to specialised agents with the OpenAI Agents SDK, in Python and TypeScript | [Multi-agent orchestration](https://stackunseen.com/code/multi-agent-orchestration-python) |
+| [`multi-agent-orchestration-python`](multi-agent-orchestration-python) | A supervisor that calls specialised agents as tools with the OpenAI Agents SDK, keeping control between steps, in Python and TypeScript | [Multi-agent orchestration](https://stackunseen.com/code/multi-agent-orchestration-python) |
+| [`rag-starter`](rag-starter) | A complete RAG loop with no API key: heading-based chunks, hybrid search, cited answers, and recall at k on a 20-question test set | [RAG starter](https://stackunseen.com/code/rag-starter) |
 
 ## Run them
+
+**rag-starter** runs offline with the Python standard library.
+
+```bash
+cd rag-starter
+python rag.py "How much can I spend on a hotel in London?"
+python evaluate.py
+```
 
 **langgraph-supervisor** runs offline; the retrieval step is a stub.
 
