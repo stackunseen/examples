@@ -10,28 +10,30 @@ Small, runnable code behind the posts and maps on [stackunseen.com](https://stac
 
 ## Run them
 
+The commands use `python3`, as on macOS and Linux; on Windows, type `python` instead.
+
 **rag-starter** runs offline with the Python standard library.
 
 ```bash
 cd rag-starter
-python rag.py "How much can I spend on a hotel in London?"
-python evaluate.py
+python3 rag.py "How much can I spend on a hotel in London?"
+python3 evaluate.py
 ```
 
 **langgraph-supervisor** runs offline; the retrieval step is a stub.
 
 ```bash
 cd langgraph-supervisor
-pip install langgraph
-python graph.py
+python3 -m pip install langgraph
+python3 graph.py
 ```
 
 **multi-agent-orchestration-python** calls a model, so it needs an `OPENAI_API_KEY` in your environment.
 
 ```bash
 cd multi-agent-orchestration-python
-pip install openai-agents
-python supervisor.py
+python3 -m pip install openai-agents
+python3 supervisor.py
 ```
 
 ```bash
