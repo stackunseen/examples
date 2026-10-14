@@ -7,7 +7,7 @@ Small, runnable code behind the posts and maps on [stackunseen.com](https://stac
 | [`langgraph-supervisor`](langgraph-supervisor) | A supervisor pattern as an explicit LangGraph state graph, with typed state and a retrieval node | [Supervisor graph with LangGraph](https://stackunseen.com/code/langgraph-supervisor) |
 | [`multi-agent-orchestration-python`](multi-agent-orchestration-python) | A supervisor that calls specialised agents as tools with the OpenAI Agents SDK, keeping control between steps, in Python and TypeScript | [Multi-agent orchestration](https://stackunseen.com/code/multi-agent-orchestration-python) |
 | [`rag-starter`](rag-starter) | A complete RAG loop with no API key: heading-based chunks, hybrid search, cited answers, and recall at k on a 20-question test set | [RAG starter](https://stackunseen.com/code/rag-starter) |
-
+| [`practice-supervisor-control`](practice-supervisor-control) | Practice: write a supervisor's hand-offs, turn budget and approval gate yourself, checked by six tests, with no API key | [Keep a supervisor in control](https://stackunseen.com/code/practice-supervisor-control) |
 ## Run them
 
 The commands use `python3`, as on macOS and Linux; on Windows, type `python` instead.
@@ -40,6 +40,13 @@ python3 supervisor.py
 cd multi-agent-orchestration-python
 npm install @openai/agents zod
 npx tsx supervisor.ts
+```
+
+**practice-supervisor-control** is an exercise: fill in the TODOs in `supervisor.py`, then check your work. It needs only Python.
+
+```bash
+cd practice-supervisor-control
+python3 -m unittest -v
 ```
 
 ## Licence
