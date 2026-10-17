@@ -48,4 +48,4 @@ Call `approve(step)` before the action, and run the action only inside the yes b
 PRACTICE_SOLUTION=1 python -m unittest -v
 ```
 
-Then look at [Multi-agent orchestration](../multi-agent-orchestration-python), which builds the same supervisor with the OpenAI Agents SDK, and find where its turn limit is set and where an approval step would go.
+Then look at [Multi-agent orchestration](../multi-agent-orchestration-python), which runs the same supervisor against a real model with no framework, and find where its turn limit is set and where an approval step would go.

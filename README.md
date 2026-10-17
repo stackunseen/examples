@@ -5,7 +5,7 @@ Small, runnable code behind the posts and maps on [stackunseen.com](https://stac
 | Example | What it shows | On the site |
 | --- | --- | --- |
 | [`langgraph-supervisor`](langgraph-supervisor) | A supervisor pattern as an explicit LangGraph state graph, with typed state and a retrieval node | [Supervisor graph with LangGraph](https://stackunseen.com/code/langgraph-supervisor) |
-| [`multi-agent-orchestration-python`](multi-agent-orchestration-python) | A supervisor that calls specialised agents as tools with the OpenAI Agents SDK, keeping control between steps, in Python and TypeScript | [Multi-agent orchestration](https://stackunseen.com/code/multi-agent-orchestration-python) |
+| [`multi-agent-orchestration-python`](multi-agent-orchestration-python) | A supervisor that calls two specialists as tools in a loop your code owns, with no agent framework: Python on the OpenAI SDK, TypeScript over the REST API | [Multi-agent orchestration](https://stackunseen.com/code/multi-agent-orchestration-python) |
 | [`rag-starter`](rag-starter) | A complete RAG loop with no API key: heading-based chunks, hybrid search, cited answers, and recall at k on a 20-question test set | [RAG starter](https://stackunseen.com/code/rag-starter) |
 | [`practice-supervisor-control`](practice-supervisor-control) | Practice: write a supervisor's hand-offs, turn budget and approval gate yourself, checked by six tests, with no API key | [Keep a supervisor in control](https://stackunseen.com/code/practice-supervisor-control) |
 ## Run them
@@ -28,17 +28,18 @@ python3 -m pip install langgraph
 python3 graph.py
 ```
 
-**multi-agent-orchestration-python** calls a model, so it needs an `OPENAI_API_KEY` in your environment.
+**multi-agent-orchestration-python** calls a model, so it needs an `OPENAI_API_KEY` in your environment (or, for Azure OpenAI, see the comments at the top of each file).
 
 ```bash
 cd multi-agent-orchestration-python
-python3 -m pip install openai-agents
+python3 -m pip install openai
 python3 supervisor.py
 ```
 
+The TypeScript version has no dependencies; it calls the REST API with `fetch`.
+
 ```bash
 cd multi-agent-orchestration-python
-npm install @openai/agents zod
 npx tsx supervisor.ts
 ```
 
