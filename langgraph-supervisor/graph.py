@@ -36,4 +36,6 @@ graph.add_edge("retrieve", "supervisor")
 graph.add_edge("answer", END)
 
 app = graph.compile()
-print(app.invoke({"question": "How should I chunk documents?", "context": [], "answer": "", "next": "retrieve"}))
+# stream() yields one update per node as it runs, so the route the supervisor chose is visible.
+for step in app.stream({"question": "How should I chunk documents?", "context": [], "answer": "", "next": "retrieve"}):
+    print(step)
